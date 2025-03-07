@@ -15,9 +15,7 @@ using System.Windows.Shapes;
 
 namespace CyberTools.View
 {
-    /// <summary>
-    /// Interaction logic for KeyLoggerView.xaml
-    /// </summary>
+   
     public partial class KeyLoggerView : UserControl
     {
         public KeyLoggerView()

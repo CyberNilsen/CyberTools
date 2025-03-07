@@ -13,13 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+///Importerer mye funksjoner som UI komponenter, Media/bilder/videoer og osv. 
+
 namespace CyberTools.View
 {
-    /// <summary>
-    /// Interaction logic for HomeView.xaml
-    /// </summary>
+    //HomeView er i cybertools mappa og i mappa view
     public partial class HomeView : UserControl
     {
+        //Her oppretter den en klasse homeview med egenskaper fra usercontrol
         public HomeView()
         {
             InitializeComponent();

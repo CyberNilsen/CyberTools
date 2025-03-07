@@ -16,8 +16,8 @@
         </StackPanel>
 
         <Grid>
-            <Border Width="500px"
-                    Height="300px"
+            <Border Width="750px"
+                    Height="500px"
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     CornerRadius="15">
@@ -31,14 +31,16 @@
                     <TextBlock Text="CyberTools" 
                                     VerticalAlignment="Center"
                                     HorizontalAlignment="Center"
-                                    FontSize="40"
+                                    FontSize="50"
                                     Foreground="White"
                                     Grid.Row="0"/>
 
-                    <Image Width="150" 
-                            Height="150"
+                    <Image Width="350" 
+                            Height="350"
                             Source="/Images/Mr-robot.jpg"
-                            Grid.Row="1"/>
+                            Grid.Row="1"
+                           Margin="0,10,0,0"
+                           />
                 </Grid>
 
                 <Border.Background>
