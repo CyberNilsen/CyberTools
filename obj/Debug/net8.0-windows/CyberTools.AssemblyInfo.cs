@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CyberTools")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b23a950f058b62a3d3b922a6af9755e1f6211cd7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+170c579e9a68a8464a9220cc61f07b70398d045a")]
 [assembly: System.Reflection.AssemblyProductAttribute("CyberTools")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CyberTools")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

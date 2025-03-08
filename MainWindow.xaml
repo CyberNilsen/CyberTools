@@ -11,13 +11,19 @@
         ResizeMode="CanResize"
         Background="Transparent"
         AllowsTransparency="True"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        Icon="/Images/CyberTools.ico"
+        
+        >
 
     <Window.DataContext>
         <viewmodel:MainViewModel/>
     </Window.DataContext>
 
     <Border Background="White" CornerRadius="20">
+       
+
+
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="200"/>
@@ -116,9 +122,10 @@
                                     BorderThickness="1" CornerRadius="5">
                                 <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                             </Border>
+                            
                             <ControlTemplate.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter TargetName="border" Property="Background" Value="#FF6200EE"/>
+                                    <Setter TargetName="border" Property="Background" Value="Cyan"/>
                                     <Setter Property="Foreground" Value="White"/>
                                 </Trigger>
                             </ControlTemplate.Triggers>
@@ -133,6 +140,12 @@
                             <Setter Property="BorderThickness" Value="1"/>
                             <Setter Property="Margin" Value="5"/>
                             <Setter Property="Padding" Value="10"/>
+                            <Setter Property="Effect">
+                                <Setter.Value>
+                                    <DropShadowEffect BlurRadius="10" Color="Black" Opacity="0.3"/>
+                                </Setter.Value>
+                            </Setter>
+                            
                         </Style>
                     </Button.Style>
                 </Button>
@@ -147,8 +160,10 @@
                             </Border>
                             <ControlTemplate.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter TargetName="border" Property="Background" Value="#FF6200EE"/>
+                                    <Setter TargetName="border" Property="Background" Value="Cyan"/>
                                     <Setter Property="Foreground" Value="White"/>
+                                    
+                                    
                                 </Trigger>
                             </ControlTemplate.Triggers>
                         </ControlTemplate>
@@ -162,6 +177,11 @@
                             <Setter Property="BorderThickness" Value="1"/>
                             <Setter Property="Margin" Value="5"/>
                             <Setter Property="Padding" Value="10"/>
+                            <Setter Property="Effect">
+                                <Setter.Value>
+                                    <DropShadowEffect BlurRadius="10" Color="Black" Opacity="0.3"/>
+                                </Setter.Value>
+                            </Setter>
                         </Style>
                     </Button.Style>
                 </Button>

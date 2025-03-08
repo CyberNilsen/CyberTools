@@ -4,11 +4,13 @@
              xmlns:local="clr-namespace:CyberTools"
              xmlns:viewmodel="clr-namespace:CyberTools.ViewModel"
              xmlns:View="clr-namespace:CyberTools.View"
-             StartupUri="MainWindow.xaml">
+             StartupUri="MainWindow.xaml"
+             >
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/Theme/MainButtonTheme.xaml"/>
+                
             </ResourceDictionary.MergedDictionaries>
 
             <DataTemplate DataType="{x:Type viewmodel:MainViewModel}">

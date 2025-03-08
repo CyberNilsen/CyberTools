@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:CyberTools.View"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
@@ -13,6 +12,13 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     CornerRadius="15">
+                <Border.Background>
+                    <LinearGradientBrush x:Name="AnimatedGradient" StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop x:Name="GradientStop1" Color="#007bff" Offset="0"/>
+                        <GradientStop x:Name="GradientStop2" Color="#6200EE" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
                 <Grid VerticalAlignment="Center"
                       HorizontalAlignment="Center">
                     <Grid.RowDefinitions>
@@ -31,16 +37,24 @@
                             Height="350"
                             Source="/Images/Mr-robot.jpg"
                             Grid.Row="1"
-                           Margin="0,10,0,0"
-                           />
+                            Margin="0,10,0,0"/>
                 </Grid>
 
-                <Border.Background>
-                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                        <GradientStop Color="Aqua" Offset="0.0"/>
-                        <GradientStop Color="Blue" Offset="1.0"/>
-                    </LinearGradientBrush>
-                </Border.Background>
+                <Border.Triggers>
+                    <EventTrigger RoutedEvent="Border.Loaded">
+                        <BeginStoryboard>
+                            <Storyboard RepeatBehavior="Forever" AutoReverse="True">
+                                
+                                <ColorAnimation Storyboard.TargetName="GradientStop1" 
+                                                Storyboard.TargetProperty="Color" 
+                                                From="#007bff" To="#ff00ff" 
+                                                Duration="0:0:50"/>
+                               
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Border.Triggers>
+
             </Border>
         </Grid>
     </Grid>
