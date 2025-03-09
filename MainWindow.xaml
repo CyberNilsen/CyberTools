@@ -12,7 +12,8 @@
         Background="Transparent"
         AllowsTransparency="True"
         WindowStartupLocation="CenterScreen"
-        Icon="/Images/CyberTools.ico"
+        Icon="pack://application:,,,/Images/CyberTools.ico"
+       
         
         >
 

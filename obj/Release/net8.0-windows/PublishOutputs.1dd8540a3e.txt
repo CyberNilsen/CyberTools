@@ -1,0 +1,8 @@
+C:\Users\ander\Desktop\CyberTools\CyberTools\bin\Release\net8.0-windows\publish\CyberTools.exe
+C:\Users\ander\Desktop\CyberTools\CyberTools\bin\Release\net8.0-windows\publish\CyberTools.dll
+C:\Users\ander\Desktop\CyberTools\CyberTools\bin\Release\net8.0-windows\publish\CyberTools.deps.json
+C:\Users\ander\Desktop\CyberTools\CyberTools\bin\Release\net8.0-windows\publish\CyberTools.runtimeconfig.json
+C:\Users\ander\Desktop\CyberTools\CyberTools\bin\Release\net8.0-windows\publish\CyberTools.pdb
+C:\Users\ander\Desktop\CyberTools\CyberTools\bin\Release\net8.0-windows\publish\MaterialDesignColors.dll
+C:\Users\ander\Desktop\CyberTools\CyberTools\bin\Release\net8.0-windows\publish\MaterialDesignThemes.Wpf.dll
+C:\Users\ander\Desktop\CyberTools\CyberTools\bin\Release\net8.0-windows\publish\Microsoft.Xaml.Behaviors.dll

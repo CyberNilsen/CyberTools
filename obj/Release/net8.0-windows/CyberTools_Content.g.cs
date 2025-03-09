@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/cybertools.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/cybertoolslogo.ico")]
 
 

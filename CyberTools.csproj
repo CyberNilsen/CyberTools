@@ -7,16 +7,17 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
     <UseWindowsForms>False</UseWindowsForms>
-    <ApplicationIcon>Images\CyberTools.ico</ApplicationIcon>
+    <ApplicationIcon>Images\CyberToolsLogo.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="Images\CyberTools.ico" />
+    <None Remove="Images\CyberToolsLogo.ico" />
     <None Remove="Images\Mr-robot.jpg" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Images\CyberTools.ico" />
+    <Content Include="Images\CyberToolsLogo.ico" />
   </ItemGroup>
 
   <ItemGroup>

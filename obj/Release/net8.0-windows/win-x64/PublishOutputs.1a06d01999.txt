@@ -1,0 +1,7 @@
+C:\Users\ander\Desktop\CyberToolsTesting\CyberTools.pdb
+C:\Users\ander\Desktop\CyberToolsTesting\D3DCompiler_47_cor3.dll
+C:\Users\ander\Desktop\CyberToolsTesting\PenImc_cor3.dll
+C:\Users\ander\Desktop\CyberToolsTesting\PresentationNative_cor3.dll
+C:\Users\ander\Desktop\CyberToolsTesting\vcruntime140_cor3.dll
+C:\Users\ander\Desktop\CyberToolsTesting\wpfgfx_cor3.dll
+C:\Users\ander\Desktop\CyberToolsTesting\CyberTools.exe
