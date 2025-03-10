@@ -1,1 +1,1 @@
-Dette er et program der jeg tester og prøver meg frem. Jeg prøver også å lære meg C Sharp og hvordan jeg kan bruke dette selv. Jeg kommer til å legge til mer funksjoner og redskaper til programmet når jeg får tid.
+Dette er et program der jeg tester og prøver meg frem. Jeg prøver også å lære meg C Sharp og hvordan jeg kan bruke dette selv. Jeg kommer til å legge til mer funksjoner og redskaper til programmet når jeg får tid. Har kun lagt til key logger, men som sagt skal jeg legge til mer.
