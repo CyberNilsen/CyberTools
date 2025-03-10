@@ -25,7 +25,7 @@ Dette programmet er et resultat av min interesse for cybersikkerhet og programut
 
 Her er et skjermbilde som viser hvordan programmet ser ut:
 
-![Skjermbilde av CyberTools](https://cybernilsen.github.io/Andreas-Nettside/Images/skjermbilde.png)
+![Skjermbilde av CyberTools](https://cybernilsen.github.io/Andreas-Nettside/Images/Skjermbilde.png)
 
 ## Funksjoner
 
