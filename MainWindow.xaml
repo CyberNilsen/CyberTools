@@ -6,189 +6,104 @@
         xmlns:local="clr-namespace:CyberTools"
         xmlns:viewmodel="clr-namespace:CyberTools.ViewModel"
         mc:Ignorable="d"
-        Title="CyberTools" Height="600" Width="1000"
-        WindowStyle="None"  
-        ResizeMode="CanResize"
+        Title="CyberTools" Height="800" Width="1200"
+        WindowStyle="None"
+        ResizeMode="NoResize"
         Background="Transparent"
         AllowsTransparency="True"
         WindowStartupLocation="CenterScreen"
-        Icon="pack://application:,,,/Images/CyberTools.ico"
-       
-        
-        >
-
-    <Window.DataContext>
-        <viewmodel:MainViewModel/>
-    </Window.DataContext>
+        Icon="pack://application:,,,/Images/CyberTools.ico">
 
     <Border Background="White" CornerRadius="20">
-       
 
+        <Border.Clip>
+            <RectangleGeometry Rect="0,0,1200,800" RadiusX="15" RadiusY="15"/>
+        </Border.Clip>
 
         <Grid>
+
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="200"/>
-                <ColumnDefinition/>
+                <ColumnDefinition Width="250" />
+                <ColumnDefinition />
             </Grid.ColumnDefinitions>
 
             <Grid.RowDefinitions>
-                <RowDefinition Height="75"/>
-                <RowDefinition/>
+                <RowDefinition Height="200" />
             </Grid.RowDefinitions>
 
-            <Grid Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top" Width="530" Height="66" Margin="0,4,70,0">
-                <TextBlock MouseLeftButtonDown="TitleBar_MouseLeftButtonDown" Margin="-146,-3,-99,-3"/>
-            </Grid>
+            <Grid Grid.Column="0" Background="Blue" Margin="0,0,0,-600" />
 
-            <Grid Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,10,0">
+            <Button Name="Main" Height="70" Content="Main page" Margin="0,100,0,30" Click="Main_Click" FontSize="22" />
+            <Button Name="Keylogger" Height="70" Content="Keylogger" Margin="0,170,0,-40" Click="Keylogger_Click" FontSize="22" />
+            <Button Name="Wifi" Height="70" Content="Wifi deauthenticate" Margin="0,240,0,-110" Click="Wifi_Click" FontSize="22" />
+
+            <Grid Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,10,0">
                 <Button x:Name="CloseButton" Content="X" Width="30" Height="30" Click="CloseButton_Click" HorizontalAlignment="Right" VerticalAlignment="Top">
                     <Button.Style>
-                        <Style TargetType="Button">
+                        <Style TargetType="{x:Type Button}">
                             <Setter Property="Template">
                                 <Setter.Value>
-                                    <ControlTemplate TargetType="Button">
+                                    <ControlTemplate TargetType="{x:Type Button}">
                                         <Border x:Name="border"
-                                                Background="{TemplateBinding Background}"
-                                                BorderBrush="{TemplateBinding BorderBrush}"
-                                                BorderThickness="1"
-                                                CornerRadius="3">
-                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        Background="{TemplateBinding Background}"
+                                        BorderBrush="{TemplateBinding BorderBrush}"
+                                        BorderThickness="1"
+                                        CornerRadius="9">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                                         </Border>
                                         <ControlTemplate.Triggers>
                                             <Trigger Property="IsMouseOver" Value="True">
-                                                <Setter TargetName="border" Property="Background" Value="Red"/>
-                                                <Setter Property="Foreground" Value="White"/>
+                                                <Setter TargetName="border" Property="Background" Value="Red" />
+                                                <Setter Property="Foreground" Value="White" />
                                             </Trigger>
                                         </ControlTemplate.Triggers>
                                     </ControlTemplate>
                                 </Setter.Value>
                             </Setter>
 
-                            <Setter Property="Background" Value="White"/>
-                            <Setter Property="Foreground" Value="Black"/>
-                            <Setter Property="BorderBrush" Value="White"/>
-                            <Setter Property="BorderThickness" Value="0"/>
-                            <Setter Property="FontSize" Value="20"/>
-                        </Style>
-                    </Button.Style>
-                </Button>
-
-                <Button Content="-" Width="30" Height="30" Click="MinimizeButton_Click" HorizontalAlignment="Right" VerticalAlignment="Top"  Margin="55,0,30,0">
-                    <Button.Style>
-                        <Style TargetType="Button">
-                            <Setter Property="Template">
-                                <Setter.Value>
-                                    <ControlTemplate TargetType="Button">
-                                        <Border x:Name="border"
-                                                Background="{TemplateBinding Background}"
-                                                BorderBrush="{TemplateBinding BorderBrush}"
-                                                BorderThickness="1"
-                                                CornerRadius="3">
-                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Top"/>
-                                        </Border>
-                                        <ControlTemplate.Triggers>
-                                            <Trigger Property="IsMouseOver" Value="True">
-                                                <Setter TargetName="border" Property="Background" Value="LightGray"/>
-                                                <Setter Property="Foreground" Value="White"/>
-                                            </Trigger>
-                                        </ControlTemplate.Triggers>
-                                    </ControlTemplate>
-                                </Setter.Value>
-                            </Setter>
-
-                            <Setter Property="Background" Value="White"/>
-                            <Setter Property="Foreground" Value="Black"/>
-                            <Setter Property="BorderBrush" Value="White"/>
-                            <Setter Property="BorderThickness" Value="0"/>
-                            <Setter Property="FontSize" Value="24"/>
+                            <Setter Property="Background" Value="White" />
+                            <Setter Property="Foreground" Value="Black" />
+                            <Setter Property="BorderBrush" Value="Transparent" />
+                            <Setter Property="BorderThickness" Value="0" />
+                            <Setter Property="FontSize" Value="20" />
                         </Style>
                     </Button.Style>
                 </Button>
             </Grid>
 
-            <TextBlock Text="CyberTools"
-                       VerticalAlignment="Center"
-                       HorizontalAlignment="Center"
-                       Foreground="Black"
-                       FontSize="22"
-                       FontFamily="Segoe UI"
-                       MouseLeftButtonDown="TitleBar_MouseLeftButtonDown"/>
-
-            <StackPanel Grid.Row="1">
-                <Button Content="Home" Height="66" Foreground="Black" FontSize="14" Command="{Binding HomeViewCommand}">
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Border x:Name="border" Background="{TemplateBinding Background}"
-                                    BorderBrush="{TemplateBinding BorderBrush}"
-                                    BorderThickness="1" CornerRadius="5">
-                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            </Border>
-                            
-                            <ControlTemplate.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter TargetName="border" Property="Background" Value="Cyan"/>
-                                    <Setter Property="Foreground" Value="White"/>
-                                </Trigger>
-                            </ControlTemplate.Triggers>
-                        </ControlTemplate>
-                    </Button.Template>
+            <Grid Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,50,0">
+                <Button Content="-" Width="30" Height="30" Click="MinimizeButton_Click" Margin="10,0,-10,0">
                     <Button.Style>
-                        <Style TargetType="Button">
-                            <Setter Property="Background" Value="White"/>
-                            <Setter Property="Foreground" Value="Black"/>
-                            <Setter Property="FontSize" Value="14"/>
-                            <Setter Property="BorderBrush" Value="Black"/>
-                            <Setter Property="BorderThickness" Value="1"/>
-                            <Setter Property="Margin" Value="5"/>
-                            <Setter Property="Padding" Value="10"/>
-                            <Setter Property="Effect">
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Template">
                                 <Setter.Value>
-                                    <DropShadowEffect BlurRadius="10" Color="Black" Opacity="0.3"/>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border x:Name="border"
+                                        Background="{TemplateBinding Background}"
+                                        BorderBrush="{TemplateBinding BorderBrush}"
+                                        BorderThickness="1"
+                                        CornerRadius="9">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Top" />
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="border" Property="Background" Value="LightGray" />
+                                                <Setter Property="Foreground" Value="White" />
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
                                 </Setter.Value>
                             </Setter>
-                            
+
+                            <Setter Property="Background" Value="White" />
+                            <Setter Property="Foreground" Value="Black" />
+                            <Setter Property="BorderBrush" Value="Transparent" />
+                            <Setter Property="BorderThickness" Value="0" />
+                            <Setter Property="FontSize" Value="24" />
                         </Style>
                     </Button.Style>
                 </Button>
-
-                <Button Content="Key Logger" Height="66" Foreground="Black" FontSize="14" Command="{Binding KeyloggerViewCommand}">
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Border x:Name="border" Background="{TemplateBinding Background}"
-                                    BorderBrush="{TemplateBinding BorderBrush}"
-                                    BorderThickness="1" CornerRadius="5">
-                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            </Border>
-                            <ControlTemplate.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter TargetName="border" Property="Background" Value="Cyan"/>
-                                    <Setter Property="Foreground" Value="White"/>
-                                    
-                                    
-                                </Trigger>
-                            </ControlTemplate.Triggers>
-                        </ControlTemplate>
-                    </Button.Template>
-                    <Button.Style>
-                        <Style TargetType="Button">
-                            <Setter Property="Background" Value="White"/>
-                            <Setter Property="Foreground" Value="Black"/>
-                            <Setter Property="FontSize" Value="14"/>
-                            <Setter Property="BorderBrush" Value="Black"/>
-                            <Setter Property="BorderThickness" Value="1"/>
-                            <Setter Property="Margin" Value="5"/>
-                            <Setter Property="Padding" Value="10"/>
-                            <Setter Property="Effect">
-                                <Setter.Value>
-                                    <DropShadowEffect BlurRadius="10" Color="Black" Opacity="0.3"/>
-                                </Setter.Value>
-                            </Setter>
-                        </Style>
-                    </Button.Style>
-                </Button>
-            </StackPanel>
-
-            <ContentControl Grid.Row="1" Grid.Column="1" Margin="10" Content="{Binding CurrentView}"/>
+            </Grid>
         </Grid>
     </Border>
 </Window>

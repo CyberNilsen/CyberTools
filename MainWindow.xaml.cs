@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using CyberTools.View;
 
 namespace CyberTools;
 
@@ -19,11 +20,6 @@ public partial class MainWindow : Window
         InitializeComponent();
     }
 
-    private void TitleBar_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)    
-    {
-        
-        this.DragMove();
-    }
     private void CloseButton_Click(object sender, RoutedEventArgs e)
     {
         this.Close();
@@ -33,4 +29,27 @@ public partial class MainWindow : Window
     {
         this.WindowState = WindowState.Minimized;
     }
+
+    private void Keylogger_Click(object sender, RoutedEventArgs e)
+    {
+        CyberTools.View.KeyLoggerView keyLoggerView = new CyberTools.View.KeyLoggerView();
+        keyLoggerView.Show();
+        this.Close();
+    }
+
+    private void Main_Click(object sender, RoutedEventArgs e)
+    {
+        CyberTools.MainWindow MainWindow = new CyberTools.MainWindow();
+        MainWindow.Show();
+        this.Close();
+    }
+
+    private void Wifi_Click(object sender, RoutedEventArgs e)
+    {
+        CyberTools.View.Wifi wifi = new CyberTools.View.Wifi();
+        wifi.Show();
+        this.Close();
+    }
+
+
 }

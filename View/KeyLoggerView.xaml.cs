@@ -4,12 +4,11 @@ using System.Runtime.InteropServices;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Input;
 
 namespace CyberTools.View
 {
-    public partial class KeyLoggerView : UserControl
+    public partial class KeyLoggerView : Window
     {
         private bool isLogging = false;
         private StreamWriter? logWriter;
@@ -18,7 +17,6 @@ namespace CyberTools.View
         public KeyLoggerView()
         {
             InitializeComponent();
-
             string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
             logFilePath = Path.Combine(desktopPath, "keylog.txt");
         }
@@ -64,6 +62,37 @@ namespace CyberTools.View
             isLogging = false;
             logWriter?.Close();
             MessageBox.Show($"Key Logger stopped!\nLog file saved at: {logFilePath}");
+        }
+
+        private void Main_Click(object sender, RoutedEventArgs e)
+        {
+            CyberTools.MainWindow MainWindow = new CyberTools.MainWindow();
+            MainWindow.Show();
+            this.Close();
+        }
+
+        private void Keylogger_Click(object sender, RoutedEventArgs e)
+        {
+            CyberTools.View.KeyLoggerView keyLoggerView = new CyberTools.View.KeyLoggerView();
+            keyLoggerView.Show();
+            this.Close();
+        }
+
+        private void CloseButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void MinimizeButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+        }
+
+        private void Wifi_Click(object sender, RoutedEventArgs e)
+        {
+            CyberTools.View.Wifi wifi = new CyberTools.View.Wifi();
+            wifi.Show();
+            this.Close();
         }
     }
 }
