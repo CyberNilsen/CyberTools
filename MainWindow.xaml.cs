@@ -20,6 +20,8 @@ public partial class MainWindow : Window
         InitializeComponent();
     }
 
+
+
     private void CloseButton_Click(object sender, RoutedEventArgs e)
     {
         this.Close();
@@ -49,6 +51,23 @@ public partial class MainWindow : Window
         CyberTools.View.Wifi wifi = new CyberTools.View.Wifi();
         wifi.Show();
         this.Close();
+    }
+
+    private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
+    {
+        System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+        {
+            FileName = e.Uri.AbsoluteUri,
+            UseShellExecute = true
+        });
+        e.Handled = true;
+    }
+    private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+    {
+        if (e.LeftButton == MouseButtonState.Pressed)
+        {
+            this.DragMove();
+        }
     }
 
 

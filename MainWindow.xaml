@@ -3,107 +3,351 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:CyberTools"
-        xmlns:viewmodel="clr-namespace:CyberTools.ViewModel"
         mc:Ignorable="d"
-        Title="CyberTools" Height="800" Width="1200"
+        Title="CyberTools - Main page" Height="800" Width="1200"
         WindowStyle="None"
         ResizeMode="NoResize"
         Background="Transparent"
         AllowsTransparency="True"
         WindowStartupLocation="CenterScreen"
+        MouseDown="Window_MouseDown"
         Icon="pack://application:,,,/Images/CyberTools.ico">
+    
+
 
     <Border Background="White" CornerRadius="20">
-
         <Border.Clip>
-            <RectangleGeometry Rect="0,0,1200,800" RadiusX="15" RadiusY="15"/>
+            <RectangleGeometry Rect="0,0,1200,800" RadiusX="15" RadiusY="15" />
         </Border.Clip>
 
         <Grid>
-
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="250" />
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
 
-            <Grid.RowDefinitions>
-                <RowDefinition Height="200" />
-            </Grid.RowDefinitions>
+            <Grid Grid.Column="0" Margin="0,0,0,0">
+                <Rectangle Fill="#2962FF" Width="250" HorizontalAlignment="Center" Height="800" VerticalAlignment="Top" />
 
-            <Grid Grid.Column="0" Background="Blue" Margin="0,0,0,-600" />
+                <StackPanel Margin="0,30,0,0">
+                    <TextBlock Text="CyberTools" FontSize="28" FontWeight="Bold" Foreground="White"
+                               HorizontalAlignment="Center" Margin="0,0,0,40" />
 
-            <Button Name="Main" Height="70" Content="Main page" Margin="0,100,0,30" Click="Main_Click" FontSize="22" />
-            <Button Name="Keylogger" Height="70" Content="Keylogger" Margin="0,170,0,-40" Click="Keylogger_Click" FontSize="22" />
-            <Button Name="Wifi" Height="70" Content="Wifi deauthenticate" Margin="0,240,0,-110" Click="Wifi_Click" FontSize="22" />
+                    <Button x:Name="Main" Content="Main Page" Height="60" Margin="20,0,20,15"
+                            FontSize="18" Foreground="White" Click="Main_Click">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#4778FA" />
+                                <Setter Property="BorderThickness" Value="0" />
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border Background="{TemplateBinding Background}" CornerRadius="8">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#0D47A1" />
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                    </Button>
 
-            <Grid Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,10,0">
-                <Button x:Name="CloseButton" Content="X" Width="30" Height="30" Click="CloseButton_Click" HorizontalAlignment="Right" VerticalAlignment="Top">
-                    <Button.Style>
-                        <Style TargetType="{x:Type Button}">
-                            <Setter Property="Template">
-                                <Setter.Value>
-                                    <ControlTemplate TargetType="{x:Type Button}">
-                                        <Border x:Name="border"
-                                        Background="{TemplateBinding Background}"
-                                        BorderBrush="{TemplateBinding BorderBrush}"
-                                        BorderThickness="1"
-                                        CornerRadius="9">
-                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
-                                        </Border>
-                                        <ControlTemplate.Triggers>
-                                            <Trigger Property="IsMouseOver" Value="True">
-                                                <Setter TargetName="border" Property="Background" Value="Red" />
-                                                <Setter Property="Foreground" Value="White" />
-                                            </Trigger>
-                                        </ControlTemplate.Triggers>
-                                    </ControlTemplate>
-                                </Setter.Value>
-                            </Setter>
+                    <Button x:Name="Keylogger" Content="Keylogger" Height="60" Margin="20,0,20,15"
+                            FontSize="18" Foreground="White" Click="Keylogger_Click">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#1E56DB" />
+                                <Setter Property="BorderThickness" Value="0" />
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border Background="{TemplateBinding Background}" CornerRadius="8">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#0D47A1" />
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                    </Button>
 
-                            <Setter Property="Background" Value="White" />
-                            <Setter Property="Foreground" Value="Black" />
-                            <Setter Property="BorderBrush" Value="Transparent" />
-                            <Setter Property="BorderThickness" Value="0" />
-                            <Setter Property="FontSize" Value="20" />
-                        </Style>
-                    </Button.Style>
-                </Button>
+                    <Button x:Name="Wifi" Content="WiFi Deauthenticate" Height="60" Margin="20,0,20,15"
+                            FontSize="18" Foreground="White" Click="Wifi_Click">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#1E56DB" />
+                                <Setter Property="BorderThickness" Value="0" />
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border Background="{TemplateBinding Background}" CornerRadius="8">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#0D47A1" />
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                </StackPanel>
+
+                <TextBlock Text="v1.1.0" Foreground="White" HorizontalAlignment="Center"
+                           VerticalAlignment="Bottom" Margin="0,0,0,20" Opacity="0.7" />
             </Grid>
 
-            <Grid Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,50,0">
-                <Button Content="-" Width="30" Height="30" Click="MinimizeButton_Click" Margin="10,0,-10,0">
-                    <Button.Style>
-                        <Style TargetType="{x:Type Button}">
-                            <Setter Property="Template">
-                                <Setter.Value>
-                                    <ControlTemplate TargetType="{x:Type Button}">
-                                        <Border x:Name="border"
-                                        Background="{TemplateBinding Background}"
-                                        BorderBrush="{TemplateBinding BorderBrush}"
-                                        BorderThickness="1"
-                                        CornerRadius="9">
-                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Top" />
-                                        </Border>
-                                        <ControlTemplate.Triggers>
-                                            <Trigger Property="IsMouseOver" Value="True">
-                                                <Setter TargetName="border" Property="Background" Value="LightGray" />
-                                                <Setter Property="Foreground" Value="White" />
-                                            </Trigger>
-                                        </ControlTemplate.Triggers>
-                                    </ControlTemplate>
-                                </Setter.Value>
-                            </Setter>
+            <Grid Grid.Column="1">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,15,15,0">
+                    <Button x:Name="MinimizeButton" Content="−" Width="40" Height="40" Click="MinimizeButton_Click"
+                            Margin="0,0,10,0" FontSize="16" FontWeight="Bold">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#F0F0F0" />
+                                <Setter Property="BorderThickness" Value="0" />
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border Background="{TemplateBinding Background}" CornerRadius="20">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#DDDDDD" />
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                    </Button>
 
-                            <Setter Property="Background" Value="White" />
-                            <Setter Property="Foreground" Value="Black" />
-                            <Setter Property="BorderBrush" Value="Transparent" />
-                            <Setter Property="BorderThickness" Value="0" />
-                            <Setter Property="FontSize" Value="24" />
-                        </Style>
-                    </Button.Style>
-                </Button>
+                    <Button x:Name="CloseButton" Content="×" Width="40" Height="40" Click="CloseButton_Click"
+                            FontSize="20" FontWeight="Bold">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#F0F0F0" />
+                                <Setter Property="BorderThickness" Value="0" />
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border x:Name="border" Background="{TemplateBinding Background}" CornerRadius="20">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter TargetName="border" Property="Background" Value="#FF5252" />
+                                                    <Setter Property="Foreground" Value="White" />
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                </StackPanel>
             </Grid>
+
+            <ScrollViewer Grid.Column="1" Margin="26,70,28,30" VerticalScrollBarVisibility="Auto">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Grid.Row="0" Margin="0,10,0,50">
+                        <TextBlock Text="Hei, jeg heter Andreas!" FontSize="42" FontWeight="Bold" Foreground="#2962FF"
+                                 HorizontalAlignment="Left" Margin="0,0,0,20">
+                            <TextBlock.Effect>
+                                <DropShadowEffect ShadowDepth="1" Direction="330" Color="#DDDDDD" Opacity="0.5" BlurRadius="4" />
+                            </TextBlock.Effect>
+                        </TextBlock>
+
+                        <TextBlock TextWrapping="Wrap" FontSize="20" LineHeight="30" Margin="0,0,0,25" Foreground="#333333" Text="Jeg er veldig interessert i cybersikkerhet og programmering generelt. Jeg har blant annet laget programmet her siden jeg liker å programmere og lære. "/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1" Margin="0,0,0,50">
+                        <Border BorderThickness="0,0,0,3" BorderBrush="#2962FF" Width="60" HorizontalAlignment="Left" Margin="0,0,0,15" />
+                        <TextBlock Text="Mine Ferdigheter" FontSize="32" FontWeight="SemiBold" Foreground="#2962FF"
+                                 Margin="0,0,0,25" />
+
+                        <UniformGrid Columns="3" Rows="2">
+                            <Border Background="#F8F9FA" Margin="0,0,15,15" CornerRadius="12" Padding="25" BorderThickness="1" BorderBrush="#EEEEEE">
+                                <Border.Effect>
+                                    <DropShadowEffect ShadowDepth="1" Direction="320" Color="#DDDDDD" Opacity="0.5" BlurRadius="10" />
+                                </Border.Effect>
+                                <StackPanel>
+                                    <TextBlock Text="HTML" FontWeight="Bold" FontSize="18" Margin="0,0,0,12" Foreground="#333333" />
+                                    <ProgressBar Value="80" Maximum="100" Height="10" Background="#E0E0E0" Foreground="#2962FF" />
+                                    <TextBlock Text="80%" HorizontalAlignment="Right" Margin="0,5,0,0" Foreground="#666666" FontSize="14" />
+                                </StackPanel>
+                            </Border>
+
+                            <Border Background="#F8F9FA" Margin="0,0,15,15" CornerRadius="12" Padding="25" BorderThickness="1" BorderBrush="#EEEEEE">
+                                <Border.Effect>
+                                    <DropShadowEffect ShadowDepth="1" Direction="320" Color="#DDDDDD" Opacity="0.5" BlurRadius="10" />
+                                </Border.Effect>
+                                <StackPanel>
+                                    <TextBlock Text="Python" FontWeight="Bold" FontSize="18" Margin="0,0,0,12" Foreground="#333333" />
+                                    <ProgressBar Value="75" Maximum="100" Height="10" Background="#E0E0E0" Foreground="#2962FF" />
+                                    <TextBlock Text="75%" HorizontalAlignment="Right" Margin="0,5,0,0" Foreground="#666666" FontSize="14" />
+                                </StackPanel>
+                            </Border>
+
+                            <Border Background="#F8F9FA" Margin="0,0,15,15" CornerRadius="12" Padding="25" BorderThickness="1" BorderBrush="#EEEEEE">
+                                <Border.Effect>
+                                    <DropShadowEffect ShadowDepth="1" Direction="320" Color="#DDDDDD" Opacity="0.5" BlurRadius="10" />
+                                </Border.Effect>
+                                <StackPanel>
+                                    <TextBlock Text="C Sharp" FontWeight="Bold" FontSize="18" Margin="0,0,0,12" Foreground="#333333" />
+                                    <ProgressBar Value="85" Maximum="100" Height="10" Background="#E0E0E0" Foreground="#2962FF" />
+                                    <TextBlock Text="85%" HorizontalAlignment="Right" Margin="0,5,0,0" Foreground="#666666" FontSize="14" />
+                                </StackPanel>
+                            </Border>
+
+                            <Border Background="#F8F9FA" Margin="0,0,15,15" CornerRadius="12" Padding="25" BorderThickness="1" BorderBrush="#EEEEEE">
+                                <Border.Effect>
+                                    <DropShadowEffect ShadowDepth="1" Direction="320" Color="#DDDDDD" Opacity="0.5" BlurRadius="10" />
+                                </Border.Effect>
+                                <StackPanel>
+                                    <TextBlock Text="PHP" FontWeight="Bold" FontSize="18" Margin="0,0,0,12" Foreground="#333333" />
+                                    <ProgressBar Value="65" Maximum="100" Height="10" Background="#E0E0E0" Foreground="#2962FF" />
+                                    <TextBlock Text="65%" HorizontalAlignment="Right" Margin="0,5,0,0" Foreground="#666666" FontSize="14" />
+                                </StackPanel>
+                            </Border>
+
+                            <Border Background="#F8F9FA" Margin="0,0,15,15" CornerRadius="12" Padding="25" BorderThickness="1" BorderBrush="#EEEEEE">
+                                <Border.Effect>
+                                    <DropShadowEffect ShadowDepth="1" Direction="320" Color="#DDDDDD" Opacity="0.5" BlurRadius="10" />
+                                </Border.Effect>
+                                <StackPanel>
+                                    <TextBlock Text="CSS" FontWeight="Bold" FontSize="18" Margin="0,0,0,12" Foreground="#333333" />
+                                    <ProgressBar Value="70" Maximum="100" Height="10" Background="#E0E0E0" Foreground="#2962FF" />
+                                    <TextBlock Text="70%" HorizontalAlignment="Right" Margin="0,5,0,0" Foreground="#666666" FontSize="14" />
+                                </StackPanel>
+                            </Border>
+                        </UniformGrid>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="2" Margin="0,0,0,50">
+                        <Border BorderThickness="0,0,0,3" BorderBrush="#2962FF" Width="60" HorizontalAlignment="Left" Margin="0,0,0,15" />
+                        <TextBlock Text="Featured Projects" FontSize="32" FontWeight="SemiBold" Foreground="#2962FF"
+                                 Margin="0,0,0,25" />
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+
+                            
+
+                            <Border Grid.Column="0" Background="#F8F9FA" Margin="0,0,15,0" CornerRadius="12"
+                                    Padding="30" BorderThickness="1" BorderBrush="#EEEEEE">
+                                <Border.Effect>
+                                    <DropShadowEffect ShadowDepth="2" Direction="320" Color="#DDDDDD" Opacity="0.5" BlurRadius="10" />
+                                </Border.Effect>
+                                <StackPanel>
+                                    <TextBlock Text="Password Manager" FontWeight="Bold" FontSize="24" Margin="0,0,0,15" Foreground="#333333" />
+                                    <TextBlock TextWrapping="Wrap" Margin="0,0,0,20" FontSize="16" LineHeight="24" Foreground="#555555">
+                                        Passord manager som jeg laget med en venn i C Sharp.
+                                    </TextBlock>
+                                    <Button Content="Se mer" Width="120" HorizontalAlignment="Left"
+                                            Background="#2962FF" Foreground="White" BorderThickness="0" Height="40" FontSize="15">
+                                        <Button.Template>
+                                            <ControlTemplate TargetType="Button">
+                                                <Border Background="{TemplateBinding Background}" CornerRadius="8">
+                                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                                </Border>
+                                            </ControlTemplate>
+                                        </Button.Template>
+                                    </Button>
+                                </StackPanel>
+                            </Border>
+                        </Grid>
+                    </StackPanel>
+
+                    <Grid Grid.Row="3" Margin="0,0,0,20">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0" Background="#F8F9FA" Margin="0,0,15,0" CornerRadius="12"
+                                Padding="30" BorderThickness="1" BorderBrush="#EEEEEE">
+                            <Border.Effect>
+                                <DropShadowEffect ShadowDepth="2" Direction="320" Color="#DDDDDD" Opacity="0.5" BlurRadius="10" />
+                            </Border.Effect>
+                            <StackPanel>
+                                <Border BorderThickness="0,0,0,3" BorderBrush="#2962FF" Width="40" HorizontalAlignment="Left" Margin="0,0,0,15" />
+                                <TextBlock Text="Om Meg" FontSize="28" FontWeight="SemiBold" Foreground="#2962FF"
+                                         Margin="0,0,0,20" />
+
+                                <TextBlock TextWrapping="Wrap" Margin="0,0,0,15" FontSize="16" LineHeight="26" Foreground="#444444">
+                                    Jeg er veldig interessert i cybersikkerhet og programmering generelt.
+                                    Jeg liker å programmere og lage ting siden dette er gøy! Jeg er 17 år gammel
+                                    og kommer fra Kongsberg i Norge. Jeg er også interessert i amerikanske biler.
+                                </TextBlock>
+                            </StackPanel>
+                        </Border>
+
+                        <Border Grid.Column="1" Background="#F8F9FA" Margin="0,0,15,0" CornerRadius="12"
+                                Padding="30" BorderThickness="1" BorderBrush="#EEEEEE">
+                            <Border.Effect>
+                                <DropShadowEffect ShadowDepth="2" Direction="320" Color="#DDDDDD" Opacity="0.5" BlurRadius="10" />
+                            </Border.Effect>
+                            <StackPanel>
+                                <Border BorderThickness="0,0,0,3" BorderBrush="#2962FF" Width="40" HorizontalAlignment="Left" Margin="0,0,0,15" />
+                                <TextBlock Text="Kontakt" FontSize="28" FontWeight="SemiBold" Foreground="#2962FF"
+                                         Margin="0,0,0,20" />
+
+                                <StackPanel Margin="0,0,0,15">
+                                    <TextBlock Text="Email:" FontWeight="SemiBold" FontSize="16" Foreground="#444444" />
+                                    <TextBlock Text="andreasnilsen07@hotmail.com" FontSize="16" Foreground="#2962FF" />
+                                </StackPanel>
+
+                                <StackPanel Margin="0,0,0,20">
+                                    <TextBlock Text="GitHub:" FontWeight="SemiBold" FontSize="16" Foreground="#444444" />
+                                    <TextBlock FontSize="16">
+                                        <Hyperlink NavigateUri="https://github.com/CyberNilsen" RequestNavigate="Hyperlink_RequestNavigate" Foreground="#2962FF">
+                                            github.com/CyberNilsen
+                                        </Hyperlink>
+                                    </TextBlock>
+                                </StackPanel>
+
+                                <StackPanel Margin="0,0,0,20">
+                                    <TextBlock Text="GitHub:" FontWeight="SemiBold" FontSize="16" Foreground="#444444" />
+                                    <TextBlock FontSize="16">
+                                        <Hyperlink NavigateUri="https://cybernilsen.github.io/Andreas-Nettside/index.html" RequestNavigate="Hyperlink_RequestNavigate" Foreground="#2962FF">
+                                            cybernilsen.github.io/Andreas-Nettside/index.html
+                                        </Hyperlink>
+                                    </TextBlock>
+                                </StackPanel>
+
+                                <TextBlock Text="© 2025 CyberNilsen. Alle rettigheter reservert."
+                                         HorizontalAlignment="Left" Margin="0,30,0,0" Opacity="0.7" FontSize="14" />
+                            </StackPanel>
+                        </Border>
+                    </Grid>
+                </Grid>
+            </ScrollViewer>
         </Grid>
     </Border>
 </Window>
