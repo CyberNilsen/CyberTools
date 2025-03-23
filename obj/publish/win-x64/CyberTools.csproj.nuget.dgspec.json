@@ -62,6 +62,14 @@
               "target": "Package",
               "version": "[8.0.13, )",
               "autoReferenced": true
+            },
+            "PacketDotNet": {
+              "target": "Package",
+              "version": "[1.4.7, )"
+            },
+            "SharpPcap": {
+              "target": "Package",
+              "version": "[6.3.0, )"
             }
           },
           "imports": [

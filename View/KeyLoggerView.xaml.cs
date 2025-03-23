@@ -102,5 +102,20 @@ namespace CyberTools.View
                 this.DragMove();
             }
         }
+
+        private void Portscanner_Click(object sender, RoutedEventArgs e)
+        {
+            CyberTools.View.portscanner portscanner = new CyberTools.View.portscanner();
+            portscanner.Show();
+            this.Close();
+        }
+
+        private void network_Click(object sender, RoutedEventArgs e)
+        {
+            CyberTools.View.NetworkScanner Networkscanner = new CyberTools.View.NetworkScanner();
+            Networkscanner.Show();
+            this.Close();
+        }
+
     }
 }

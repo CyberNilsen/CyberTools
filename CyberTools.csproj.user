@@ -7,6 +7,12 @@
     <Compile Update="View\KeyLoggerView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\Networkscanner.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\portscanner.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\Wifi.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

@@ -1,0 +1,14 @@
+SharpPcap.PcapException: Can't send packet: send error: PacketSendPacket failed: I/U-operasjonen mislyktes fordi nettverksmediet er koblet fra eller det trådløse tilgangspunktet er utenfor rekkevidde.  (2150891551)
+   at SharpPcap.LibPcap.LibPcapLiveDevice.SendPacket(ReadOnlySpan`1 p, ICaptureHeader header)
+   at SharpPcap.CaptureDeviceExtensions.SendPacket(IInjectionDevice device, Packet p)
+   at CyberTools.View.Networkscanner.ScanNetworkARP(String subnet) in C:\Users\ander\Desktop\CyberTools\CyberTools\View\Networkscanner.xaml.cs:line 116
+   at CyberTools.View.Networkscanner.<>c__DisplayClass6_0.<ScanButton_Click>b__0() in C:\Users\ander\Desktop\CyberTools\CyberTools\View\Networkscanner.xaml.cs:line 46
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at CyberTools.View.Networkscanner.ScanButton_Click(Object sender, RoutedEventArgs e) in C:\Users\ander\Desktop\CyberTools\CyberTools\View\Networkscanner.xaml.cs:line 46
+   at System.Threading.Tasks.Task.<>c.<ThrowAsync>b__128_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)

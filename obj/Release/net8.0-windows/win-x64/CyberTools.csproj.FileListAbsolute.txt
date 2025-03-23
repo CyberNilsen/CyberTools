@@ -491,3 +491,9 @@ C:\Users\ander\Desktop\CyberTools\CyberTools\obj\Release\net8.0-windows\win-x64\
 C:\Users\ander\Desktop\CyberTools\CyberTools\obj\Release\net8.0-windows\win-x64\CyberTools.pdb
 C:\Users\ander\Desktop\CyberTools\CyberTools\obj\Release\net8.0-windows\win-x64\CyberTools.genruntimeconfig.cache
 C:\Users\ander\Desktop\CyberTools\CyberTools\obj\Release\net8.0-windows\win-x64\ref\CyberTools.dll
+C:\Users\ander\Desktop\CyberTools\CyberTools\bin\Release\net8.0-windows\win-x64\PacketDotNet.dll
+C:\Users\ander\Desktop\CyberTools\CyberTools\bin\Release\net8.0-windows\win-x64\SharpPcap.dll
+C:\Users\ander\Desktop\CyberTools\CyberTools\obj\Release\net8.0-windows\win-x64\View\Networkscanner.g.cs
+C:\Users\ander\Desktop\CyberTools\CyberTools\obj\Release\net8.0-windows\win-x64\View\portscanner.g.cs
+C:\Users\ander\Desktop\CyberTools\CyberTools\obj\Release\net8.0-windows\win-x64\View\Networkscanner.baml
+C:\Users\ander\Desktop\CyberTools\CyberTools\obj\Release\net8.0-windows\win-x64\View\portscanner.baml

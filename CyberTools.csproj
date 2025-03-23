@@ -33,6 +33,8 @@
   <ItemGroup>
     <PackageReference Include="MaterialDesignColors" Version="5.2.1" />
     <PackageReference Include="MaterialDesignThemes" Version="5.2.1" />
+    <PackageReference Include="PacketDotNet" Version="1.4.7" />
+    <PackageReference Include="SharpPcap" Version="6.3.0" />
   </ItemGroup>
 
   <ItemGroup>
