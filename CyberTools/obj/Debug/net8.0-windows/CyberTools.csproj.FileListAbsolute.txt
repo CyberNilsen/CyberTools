@@ -1,6 +1,5 @@
 C:\Users\ander\Desktop\CyberTools\CyberTools\bin\Debug\net8.0-windows\CyberTools.exe
 C:\Users\ander\Desktop\CyberTools\CyberTools\bin\Debug\net8.0-windows\Images\CybertoolsLogohammer.ico
-C:\Users\ander\Desktop\CyberTools\CyberTools\bin\Debug\net8.0-windows\WifiDeauthLib.dll
 C:\Users\ander\Desktop\CyberTools\CyberTools\bin\Debug\net8.0-windows\CyberTools.deps.json
 C:\Users\ander\Desktop\CyberTools\CyberTools\bin\Debug\net8.0-windows\CyberTools.runtimeconfig.json
 C:\Users\ander\Desktop\CyberTools\CyberTools\bin\Debug\net8.0-windows\CyberTools.dll
@@ -38,3 +37,4 @@ C:\Users\ander\Desktop\CyberTools\CyberTools\obj\Debug\net8.0-windows\refint\Cyb
 C:\Users\ander\Desktop\CyberTools\CyberTools\obj\Debug\net8.0-windows\CyberTools.pdb
 C:\Users\ander\Desktop\CyberTools\CyberTools\obj\Debug\net8.0-windows\CyberTools.genruntimeconfig.cache
 C:\Users\ander\Desktop\CyberTools\CyberTools\obj\Debug\net8.0-windows\ref\CyberTools.dll
+C:\Users\ander\Desktop\CyberTools\CyberTools\bin\Debug\net8.0-windows\WifiDeauthLib.dll

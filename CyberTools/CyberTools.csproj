@@ -47,14 +47,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="WifiDeauthLib.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <Folder Include="Core\" />
+    <Folder Include="Theme\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Core\" />
-    <Folder Include="Theme\" />
+    <None Update="WifiDeauthLib.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
