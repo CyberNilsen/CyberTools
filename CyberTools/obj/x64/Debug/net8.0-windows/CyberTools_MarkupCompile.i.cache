@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\ander\Desktop\CyberTools\CyberTools\App.xaml
-51354986296
+6-114564733
 1432581385
-11-1425357332
+12-1301043386
 203-69572368
-MainWindow.xaml;View\KeyLoggerView.xaml;View\Networkscanner.xaml;View\portscanner.xaml;View\Wifi.xaml;
+MainWindow.xaml;View\Ddos.xaml;View\KeyLoggerView.xaml;View\Networkscanner.xaml;View\portscanner.xaml;View\Wifi.xaml;
 
 False
 

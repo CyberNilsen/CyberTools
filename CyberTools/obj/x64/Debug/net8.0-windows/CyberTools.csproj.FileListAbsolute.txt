@@ -34,8 +34,10 @@ C:\Users\ander\Desktop\CyberToolsVisualstudio\CyberTools\obj\x64\Debug\net8.0-wi
 C:\Users\ander\Desktop\CyberToolsVisualstudio\CyberTools\obj\x64\Debug\net8.0-windows\ref\CyberTools.dll
 C:\Users\ander\Desktop\CyberTools\CyberTools\obj\x64\Debug\net8.0-windows\CyberTools.csproj.AssemblyReference.cache
 C:\Users\ander\Desktop\CyberTools\CyberTools\obj\x64\Debug\net8.0-windows\MainWindow.baml
+C:\Users\ander\Desktop\CyberTools\CyberTools\obj\x64\Debug\net8.0-windows\View\Ddos.baml
 C:\Users\ander\Desktop\CyberTools\CyberTools\obj\x64\Debug\net8.0-windows\View\KeyLoggerView.baml
 C:\Users\ander\Desktop\CyberTools\CyberTools\obj\x64\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\ander\Desktop\CyberTools\CyberTools\obj\x64\Debug\net8.0-windows\View\Ddos.g.cs
 C:\Users\ander\Desktop\CyberTools\CyberTools\obj\x64\Debug\net8.0-windows\View\KeyLoggerView.g.cs
 C:\Users\ander\Desktop\CyberTools\CyberTools\obj\x64\Debug\net8.0-windows\View\Networkscanner.g.cs
 C:\Users\ander\Desktop\CyberTools\CyberTools\obj\x64\Debug\net8.0-windows\View\portscanner.g.cs

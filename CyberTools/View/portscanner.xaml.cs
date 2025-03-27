@@ -206,5 +206,12 @@ namespace CyberTools.View
                 }
             }
         }
+
+        private void Ddos_Click(object sender, RoutedEventArgs e)
+        {
+            CyberTools.View.Ddos ddos = new CyberTools.View.Ddos();
+            ddos.Show();
+            this.Close();
+        }
     }
 }

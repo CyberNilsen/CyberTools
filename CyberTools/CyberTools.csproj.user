@@ -4,6 +4,9 @@
     <_LastSelectedProfileId>C:\Users\ander\Desktop\CyberTools\CyberTools\Properties\PublishProfiles\CyberTools.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Update="View\Ddos.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\KeyLoggerView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

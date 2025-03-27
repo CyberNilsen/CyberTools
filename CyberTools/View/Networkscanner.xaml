@@ -144,12 +144,37 @@
                             </Style>
                         </Button.Style>
                     </Button>
+
+                    <Button x:Name="Ddos" Content="Ddos" Height="60" Margin="20,0,20,15"
+                            FontSize="18" Foreground="White" Click="Ddos_Click" >
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#1E56DB" />
+                                <Setter Property="BorderThickness" Value="0" />
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border Background="{TemplateBinding Background}" CornerRadius="8">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#0D47A1" />
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+
                 </StackPanel>
                 <TextBlock Text="v2.0.0" Foreground="White" HorizontalAlignment="Center"
                            VerticalAlignment="Bottom" Margin="0,0,0,20" Opacity="0.7"/>
             </Grid>
 
-            <!-- Main Content Area -->
+            
             <Grid Grid.Column="1">
                 <StackPanel Margin="30">
                     <TextBlock Text="Network Scanner (ARP Scan)" FontSize="28" FontWeight="Bold" Margin="0,0,0,20"/>
@@ -165,7 +190,7 @@
                     <Label x:Name="ScanDetailsLabel" Content="Ready to scan" Margin="0,0,0,10" FontSize="14"/>
                     <ListBox x:Name="DevicesList" FontSize="16" Height="450"/>
                 </StackPanel>
-                <!-- Window Control Buttons -->
+                
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,15,15,0">
                     <Button x:Name="MinimizeButton" Content="−" Width="40" Height="40" Click="MinimizeButton_Click"
                             Margin="0,0,10,0" FontSize="16" FontWeight="Bold">
