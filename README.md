@@ -28,7 +28,7 @@ The tools are accessible through a graphical user interface and may include:
 ## 📦 Download
 
 You can find both the installer and ZIP versions here:  
-👉 [cybernilsen.github.io/Andreas-Nettside/cybertools.html](https://cybernilsen.github.io/Andreas-Nettside/index.html)
+👉 [cybernilsen.github.io/Andreas-Nettside/cybertools.html](https://cybernilsen.github.io/Andreas-Nettside/cybertools.html)
 
 Direct download links (latest version):
 - 💽 [Installer (EXE)](https://cybernilsen.github.io/Andreas-Nettside/downloads/CyberTools_Installer_v2.5.0.exe)  
