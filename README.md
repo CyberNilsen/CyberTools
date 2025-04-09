@@ -32,7 +32,7 @@ Du finner installasjonsfilene og ZIP-versjonene her:
 
 Direktelenker (seneste versjon):
 - 💽 [Installer (EXE)](https://cybernilsen.github.io/Andreas-Nettside/downloads/CyberTools_Installer_v2.5.0.exe)
-- 🗜️ [ZIP Fil](https://cybernilsen.github.io/Andreas-Nettside/downloads/CyberToolsProgramV2.5.zip)
+- 🗜️ [ZIP Fil](https://cybernilsen.github.io/Andreas-Nettside/downloads/CyberToolsProgramV2,5.zip)
 
 ---
 
