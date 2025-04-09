@@ -1,63 +1,63 @@
 # 🔧 CyberTools
 
-**CyberTools** er en samling verktøy laget for å utforske og lære mer om **cybersikkerhet**, **nettverksanalyse** og **programmering** – med hovedfokus på utvikling i **C#**. Prosjektet kombinerer praktisk læring med utvikling av nyttige verktøy for testing, analyse og forståelse av digitale miljøer.
+**CyberTools** is a collection of tools developed to explore and learn more about **cybersecurity**, **network analysis**, and **programming** – with a primary focus on development in **C#**. This project combines hands-on learning with the creation of useful utilities for testing, analysis, and understanding of digital environments.
 
-> ⚠️ **Viktig:** Verktøyene er kun ment for **læringsformål**. Ikke bruk dem på systemer du ikke har tillatelse til – det kan være ulovlig.
-
----
-
-## 🧠 Hva er CyberTools?
-
-CyberTools er et personlig prosjekt laget for å lære mer om programmering, GUI-design og cybersikkerhet. Det inneholder ulike verktøy som kan være nyttige for testing og eksperimentering i sikre omgivelser.
-
-Verktøyene er tilgjengelige gjennom et grafisk grensesnitt, og kan inkludere:
-- 🔐 Keylogger
-- 📡 WiFi Deauthentication Tool
-- 🌐 Port Scanner
-- 🔎 Network Scanner
-- ⚙️ Flere verktøy planlegges!
+> ⚠️ **Important:** These tools are intended for **educational purposes only**. Do not use them on systems you do not own or have permission to access – this may be illegal.
 
 ---
 
-## 🖥️ Skjermbilde
+## 🧠 What is CyberTools?
+
+CyberTools is a personal project created to learn more about programming, GUI design, and cybersecurity. It includes various tools useful for testing and experimentation in secure environments.
+
+The tools are accessible through a graphical user interface and may include:
+- 🔐 Keylogger  
+- 📡 WiFi Deauthentication Tool  
+- 🌐 Port Scanner  
+- 🔎 Network Scanner  
+- ⚙️ More tools planned!
+
+---
+
+## 🖥️ Screenshot
 
 ![CyberTools Screenshot](https://cybernilsen.github.io/Andreas-Nettside/Images/CyberToolsV2.png)
 
 ---
 
-## 📦 Nedlasting
+## 📦 Download
 
-Du finner installasjonsfilene og ZIP-versjonene her:  
-👉 [cybernilsen.github.io/Andreas-Nettside/cybertools.html](https://cybernilsen.github.io/Andreas-Nettside/cybertools.html)
+You can find both the installer and ZIP versions here:  
+👉 [cybernilsen.github.io/Andreas-Nettside/cybertools.html](https://cybernilsen.github.io/Andreas-Nettside/index.html)
 
-Direktelenker (seneste versjon):
-- 💽 [Installer (EXE)](https://cybernilsen.github.io/Andreas-Nettside/downloads/CyberTools_Installer_v2.5.0.exe)
-- 🗜️ [ZIP Fil](https://cybernilsen.github.io/Andreas-Nettside/downloads/CyberToolsProgramV2,5.zip)
-
----
-
-## 🚀 Hvordan bruke
-
-1. Last ned ønsket versjon (EXE eller ZIP).
-2. Kjør installasjonsfilen eller pakk ut ZIP-filen.
-3. Start programmet og utforsk verktøyene via menyen til venstre.
+Direct download links (latest version):
+- 💽 [Installer (EXE)](https://cybernilsen.github.io/Andreas-Nettside/downloads/CyberTools_Installer_v2.5.0.exe)  
+- 🗜️ [ZIP File](https://cybernilsen.github.io/Andreas-Nettside/downloads/CyberToolsProgramV2,5.zip)
 
 ---
 
-## ⚙️ Teknologi
+## 🚀 How to Use
 
-- **C#** (.NET)
-- **C++**
-- **WPF**
-- **HTML/CSS** (for dokumentasjon og nettside)
-- **GitHub Pages** (hosting)
+1. Download your preferred version (EXE or ZIP).  
+2. Run the installer or extract the ZIP file.  
+3. Launch the program and explore the tools from the menu on the left.
 
 ---
 
-## 📜 Lisens
+## ⚙️ Technologies Used
 
-Dette prosjektet er lisensiert under [MIT License](LICENSE).
+- **C#** (.NET Framework)  
+- **C++**  
+- **WPF**  
+- **HTML/CSS** (for documentation and website)  
+- **GitHub Pages** (for hosting)
 
 ---
 
-> Utviklet med nysgjerrighet og lidenskap av Andreas (CyberNilsen)
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+> Developed with curiosity and passion by Andreas (CyberNilsen)
