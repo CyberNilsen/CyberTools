@@ -21,7 +21,7 @@ Verktøyene er tilgjengelige gjennom et grafisk grensesnitt, og kan inkludere:
 
 ## 🖥️ Skjermbilde
 
-![CyberTools Screenshot](https://cybernilsen.github.io/Andreas-Nettside/Images/CyberToolsV2,5.png)
+![CyberTools Screenshot](https://cybernilsen.github.io/Andreas-Nettside/Images/CyberToolsV2.png)
 
 ---
 
