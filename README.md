@@ -21,7 +21,7 @@ Verktøyene er tilgjengelige gjennom et grafisk grensesnitt, og kan inkludere:
 
 ## 🖥️ Skjermbilde
 
-![CyberTools Screenshot](https://cybernilsen.github.io/Andreas-Nettside/Images/CyberToolsV1.png)
+![CyberTools Screenshot](https://cybernilsen.github.io/Andreas-Nettside/Images/CyberToolsV2,5.png)
 
 ---
 
@@ -32,7 +32,7 @@ Du finner installasjonsfilene og ZIP-versjonene her:
 
 Direktelenker (seneste versjon):
 - 💽 [Installer (EXE)](https://cybernilsen.github.io/Andreas-Nettside/downloads/CyberTools_Installer_v2.5.0.exe)
-- 🗜️ [ZIP Fil](https://cybernilsen.github.io/Andreas-Nettside/downloads/CyberTools_v2.5.zip)
+- 🗜️ [ZIP Fil](https://cybernilsen.github.io/Andreas-Nettside/downloads/CyberTools_V2.5.zip)
 
 ---
 
@@ -47,7 +47,8 @@ Direktelenker (seneste versjon):
 ## ⚙️ Teknologi
 
 - **C#** (.NET)
-- **WinForms**
+- **C++**
+- **WPF**
 - **HTML/CSS** (for dokumentasjon og nettside)
 - **GitHub Pages** (hosting)
 
