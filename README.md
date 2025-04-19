@@ -60,4 +60,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-> Developed with curiosity and passion by Andreas (CyberNilsen)
+> Developed with curiosity and passion by Andreas ([CyberNilsen](https://github.com/CyberNilsen))
