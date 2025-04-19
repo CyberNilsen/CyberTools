@@ -51,7 +51,7 @@ Direct download links (latest version):
 - **WPF**  
 - **HTML/CSS** (for documentation and website)  
 - **GitHub Pages** (for hosting)
-([CyberNilsen](https://github.com/CyberNilsen))
+
 ---
 
 ## 📜 License
