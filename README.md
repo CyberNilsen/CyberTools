@@ -15,7 +15,6 @@ The tools are accessible through a graphical user interface and may include:
 - 📡 WiFi Deauthentication Tool  
 - 🌐 Port Scanner  
 - 🔎 Network Scanner  
-- ⚙️ More tools planned!
 
 ---
 
